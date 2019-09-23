@@ -1,0 +1,1209 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
+    <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> B-Zone - Экскурсии в ОАЭ, Абу-Даби,большой выбор экскурсий!</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico ' %}">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Button Hover animate css -->
+    <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">
+    <!-- jquery-ui.min css -->
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <!-- slick css -->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <!-- chosen.min-->
+    <link rel="stylesheet" href="{% static 'css/chosen.min.css' %}">
+    <!-- chosen.min-->
+    <link rel="stylesheet" href="{% static 'css/jquery-customselect.css' %}">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- magnific Css -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="{% static 'css/assets/revolution/layers.css' %}">
+    <link rel="stylesheet" href="{% static 'css/assets/revolution/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/assets/revolution/settings.css' %}">
+    <!-- custome css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- modernizr css -->
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+</head>
+<body> 
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>	
+<header>
+	<div class="header-top-area">
+		<div class="container">
+			<div class="row">
+				<div class="header-top-left">
+					<div class="col-md-9 col-sm-9 col-xs-12">
+						<ul class="header-top-contact">
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i>г. Бишкек, Ибраимова 181</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i>+(996)-550-753-159</li>
+							<li><i class="fa fa-envelope-o" aria-hidden="true"></i>info@b-zone.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- header top end -->
+
+	<div class="header-bottom-area" id="stick-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-12 tap-v-responsive">
+					<div class="logo-area">
+						<a href="http://127.0.0.1:8000"><img src="{% static 'images/logo.png' %}" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<nav>
+						<ul class="main-menu text-right">
+							<li class="active"><a href="http://127.0.0.1:8000">Главная</a></li>
+							<li><a href="blog.html">Блог</a></li>
+							<li><a href="contact.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div> <!-- main menu end here -->
+			</div>
+		</div>
+	</div> <!-- header-bottom area end here -->
+</header> <!-- header area end here -->
+
+<!-- slider area start here -->
+<section class="slider-area">
+	<div class="rev_slider_wrapper">
+		<div id="rev_slider_1" class="rev_slider" style="display:none">
+			<ul>
+				<li data-index="rs-3010" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-thumb="images/slider/main_3.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+					<div class="slider-overlay"></div>
+					<!-- MAIN IMAGE -->
+					<img src="{% static 'images/slider/main_3.jpg' %}" alt="Sky" class="rev-slidebg">
+					<!-- BEGIN BASIC TEXT LAYER -->
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-1" data-x="['center', 'center', 'center', 'center']" data-hoffset="0" data-y="center" data-voffset="-150" data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 6; font-size:40px; color:#fff; text-transform:capitalize; font-family:'Poppins', sans-serif; white-space: nowrap; font-weight:400;">Открой свои глаза
+					</div>
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="-80" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":750,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' style="z-index: 6; color:#fff; text-transform:capitalize; font-family:'Poppins', sans-serif; white-space: nowrap;"><h1 style="font-weight:00; font-size:60px;">НЕИЗВЕДАННЫМ МИРАМ</h1>
+					</div>
+
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption font-lora sfb tp-resizeme letter-space-5  header-p1" data-x="center" data-hoffset="0" data-y="center" data-voffset="-5" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":750,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' style="z-index: 7; font-size:16px; color:#fff; font-family:'Poppins', sans-serif; white-space: nowrap; font-weight:400;">
+						«Инвестиции в поездки это инвестиции в себя» — Мэттью Карстен.
+					</div>
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption font-lora sfb tp-resizeme letter-space-5 header-p2" data-x="center" data-hoffset="0" data-y="center" data-voffset="20" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":750,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' style="z-index: 7; font-size:16px; color:#fff; font-family:'Poppins', sans-serif; white-space: nowrap; font-weight:400;">
+						
+					</div>
+
+					<!-- LAYER NR. 5 -->
+					<div class="tp-caption lfb tp-resizeme  header-btn" data-x="center" data-hoffset="0" data-y="center" data-voffset="120" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":750,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' style="z-index: 8;"><a href="#" class="travel-primary-btn hvr-fade">Выбрать тур</a>
+					</div>
+				</li>
+				<!-- first slider end -->
+
+				<li data-index="rs-3047" data-transition="zoomin" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/slider/main_5.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+					<div class="slider-overlay"></div>
+					<!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+					<img src="{% static 'images/slider/main_5.jpg' %}"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="0" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+					<!-- BEGIN BASIC TEXT LAYER -->
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-1" data-x="['center', 'center', 'center', 'center']" data-hoffset="0" data-y="center" data-voffset="-150" data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' style="z-index: 6; font-size:40px; color:#fff; text-transform:capitalize; font-family:'Poppins', sans-serif; white-space: nowrap; font-weight:400;">Open Your Eyes To
+					</div>
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 title-line-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="-80" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":750,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' style="z-index: 6; color:#fff; text-transform:capitalize; font-family:'Poppins', sans-serif; white-space: nowrap;"><h1 style="font-weight:600; font-size:60px;">The Hidden World</h1>
+					</div>
+
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption font-lora sfb tp-resizeme letter-space-5  header-p1" data-x="center" data-hoffset="0" data-y="center" data-voffset="-5" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":750,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' style="z-index: 7; font-size:16px; color:#fff; font-family:'Poppins', sans-serif; white-space: nowrap; font-weight:400;">
+						Lorem ipsum dolor sit amet consectetur adipiscing elit proin leo leo ornare nec
+					</div>
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption font-lora sfb tp-resizeme letter-space-5 header-p2" data-x="center" data-hoffset="0" data-y="center" data-voffset="20" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":750,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' style="z-index: 7; font-size:16px; color:#fff; font-family:'Poppins', sans-serif; white-space: nowrap; font-weight:400;">
+						vulputate tempus velit nam id purus tellus hendrerit mi dapibus.
+					</div>
+
+					<!-- LAYER NR. 5 -->
+					<div class="tp-caption lfb tp-resizeme  header-btn" data-x="center" data-hoffset="0" data-y="center" data-voffset="120" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":750,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' style="z-index: 8;"><a href="#" class="travel-primary-btn hvr-fade">Start Tour</a>
+					</div>
+				</li>
+				<!-- first slider end -->
+			</ul>
+		</div> <!-- end slider container -->
+	</div> <!-- END end slider container wrapper -->
+</section> <!-- slider area end here -->
+
+
+<section class="popular-packages pb-70 pt-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="section-title text-center">
+					<h2>ОБЗОРНЫЕ ЭКСКУРСИИ</h2>
+					<p>Мы находим лучших гидов и совместно придумываем экскурсии. В результате вы встречаетесь с журналистами, историками, архитекторами и другими интересными людьми, которые умеют увлечь своими знаниями.​</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/2/"><img src="{% static 'images/packages/dubai-tour.jpg' %}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Обзорная Экскурсия по Дубаю</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/2/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/3/"><img src="{% static 'images/packages/abu_dhabi-tour.jpeg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Обзорная Экскурсия по Абу-Даби.</h3>
+						<p>Длительность 5-6 часов. Стоимость от<span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/3/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/4/"><img src="{% static 'images/packages/al_ain-tour.jpeg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Обзорная Экскурсия по Аль-Айну.</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/4/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/5/"><img src="{% static 'images/packages/Night_Dubai-tour.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3> Экскурсия по Ночному Дубаю.</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$45</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/5/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/6/"><img src="{% static 'images/packages/uae_tour.jpeg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Экскурсия 6 Эмиратов за 1 День.</h3>
+						<p> Длительность 24 часа. Стоимость от <span>$100</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/6/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/7/"><img src="{% static 'images/packages/privat_tour.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Индивидуальная Экскурсия.</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$200</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/7/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+		</div>
+	</div>
+</section> <!--end  popular packajge -->
+
+
+<section class="popular-packages pb-70 pt-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="section-title text-center">
+					<h2>ВОДНЫЕ ЭКСКУРСИИ</h2>
+					<p>Мы находим лучших гидов и совместно придумываем экскурсии. В результате вы встречаетесь с журналистами, историками, архитекторами и другими интересными людьми, которые умеют увлечь своими знаниями.​</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/8/"><img src="{% static 'images/packages/fishing_dubai.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Глубоководная рыбалка в ОАЭ</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/8/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/9/"><img src="{% static 'images/packages/ind_ocean.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Экскурсия на Индийский Океан</h3>
+						<p>Длительность 5-6 часов. Стоимость от<span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/9/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/10/"><img src="{% static 'images/packages/musandam_tour.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Поездка в Мусандам</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/10/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/11/"><img src="{% static 'images/packages/crab_tour.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Ночная Охота на Крабов</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$45</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/11/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/12/"><img src="{% static 'images/packages/dubai-marina_tour.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Ужин на Лодке в Дубай Марине</h3>
+						<p> Длительность 24 часа. Стоимость от <span>$100</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/12/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/13/"><img src="{% static 'images/packages/yakht_tour.png'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Аренда Яхты в Дубае</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$200</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/13/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+		</div>
+	</div>
+</section> <!--end  popular packajge -->
+
+<section class="popular-packages pb-70 pt-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="section-title text-center">
+					<h2>ПУСТЫННЫЕ И ВОЗДУШНЫЕ ЭКСКУРСИИ</h2>
+					<p>Мы находим лучших гидов и совместно придумываем экскурсии. В результате вы встречаетесь с журналистами, историками, архитекторами и другими интересными людьми, которые умеют увлечь своими знаниями.​</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/14/"><img src="{% static 'images/packages/shar_tour.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Полет на воздушном шаре</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/14/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/15/"><img src="{% static 'images/packages/helicopter_tour.jpg '%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Полет на вертолете</h3>
+						<p>Длительность 5-6 часов. Стоимость от<span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/15/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/16/"><img src="{% static 'images/packages/horse_tour.jpg '%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Катание на лошадях</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/16/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/17/"><img src="{% static 'images/packages/korol_safari.jpg '%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Вечернее пустынное сафари</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$45</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/17/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/18/"><img src="{% static 'images/packages/safari_tour.jpeg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Королевское сафари</h3>
+						<p> Длительность 24 часа. Стоимость от <span>$100</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/18/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/19/"><img src="{% static 'images/packages/bab_al_sham_tour.jpg '%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Ресторан Баб Аль Шамс</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$200</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/19/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+		</div>
+	</div>
+</section> <!--end  popular packajge -->
+
+<section class="popular-packages pb-70 pt-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="section-title text-center">
+					<h2>ТЕМАТИЧЕСКИЕ ПАРКИ И АТТРАКЦИОНЫ</h2>
+					<p>Мы находим лучших гидов и совместно придумываем экскурсии. В результате вы встречаетесь с журналистами, историками, архитекторами и другими интересными людьми, которые умеют увлечь своими знаниями.​</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="/tour/20/"><img src="{% static 'images/packages/ferrari_park_tour.jpg' %}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Тематический Парк Ferarri</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="/tour/20/" class="travel-booking-btn hvr-shutter-out-horizontal">Подробнее</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="#"><img src="{% static 'images/packages/img_park_tour.jpg '%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Тематический Парк IMG</h3>
+						<p>Длительность 5-6 часов. Стоимость от<span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Заказать</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="#"><img src="{% static 'images/packages/legoland_tour.jpg '%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Тематический парк LegoLand</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$35</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Заказать</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="#"><img src="{% static 'images/packages/yas_tour.jpg'%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Аквапарк  Yas WaterWorld</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$45</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Заказать</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="#"><img src="{% static 'images/packages/wild_wadi-tour.jpg '%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Аквапарк Wild Wadi</h3>
+						<p> Длительность 24 часа. Стоимость от <span>$100</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Заказать</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-package">
+					<div class="package-image">
+						<a href="#"><img src="{% static 'images/packages/atlantis_tour.jpg '%}" alt="">
+						</a>
+					</div>
+					<div class="package-content">
+						<h3>Аквапарк Атлантис</h3>
+						<p>Длительность 5-6 часов. Стоимость от <span>$200</span>
+						</p>
+					</div>
+					<div class="package-calto-action">
+						<ul class="ct-action">
+							<li><a href="#" class="travel-booking-btn hvr-shutter-out-horizontal">Заказать</a>
+							</li>
+							<li>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- single package end -->
+		</div>
+	</div>
+</section> <!--end  popular packajge -->
+
+
+<section class="trabble-bg image-bg-padding-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="section-title-white text-center">
+					<h2>Почему Выбирают Именно Нас</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam at ipsum at ligula vestibulum sodales Sed luctus orci vel nibh aliquam laoreet Aenean accumsan </p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- single travel start -->
+			<div class="col-md-4 col-sm-6">
+				<div class="single-travel">
+					<div class="media">
+						<div class="media-left media-middle travel-number">
+							<span>01.</span>
+						</div>
+						<div class="media-body travel-content">
+							<h4>Travel Arrangements</h4>
+							<p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- single travel end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-travel">
+					<div class="media">
+						<div class="media-left media-middle travel-number">
+							<span>02.</span>
+						</div>
+						<div class="media-body travel-content">
+							<h4>Cheap Flights</h4>
+							<p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- single travel end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-travel">
+					<div class="media">
+						<div class="media-left media-middle travel-number">
+							<span>03.</span>
+						</div>
+						<div class="media-body travel-content">
+							<h4>Hand-picked tours</h4>
+							<p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- single travel end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-travel">
+					<div class="media">
+						<div class="media-left media-middle travel-number">
+							<span>04.</span>
+						</div>
+						<div class="media-body travel-content">
+							<h4>Privet Guide</h4>
+							<p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- single travel end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-travel">
+					<div class="media">
+						<div class="media-left media-middle travel-number">
+							<span>05.</span>
+						</div>
+						<div class="media-body travel-content">
+							<h4>Special Activities</h4>
+							<p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- single travel end -->
+
+			<div class="col-md-4 col-sm-6">
+				<div class="single-travel">
+					<div class="media">
+						<div class="media-left media-middle travel-number">
+							<span>06.</span>
+						</div>
+						<div class="media-body travel-content">
+							<h4>Best Price Guarantee</h4>
+							<p>Lorem ipsum dolor sit amet consect adiu piscing elit sed diam nonum euismo tincidunt ut.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- single travel end -->
+		</div>
+	</div>
+</section> <!-- choose trabble end here -->
+
+<footer class="footer-area">
+	<div class="container">
+		<div class="row">
+			<!-- footer left -->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-footer">
+					<div class="footer-title">
+						<a href="#"><img src="{% static 'images/logo.png '%}" alt="">
+						</a>
+					</div>
+					<div class="footer-left">
+						<div class="footer-logo">
+							<p>Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula vestibulum sodales.</p>
+						</div>
+						<ul class="footer-contact">
+							<li><img class="map" src="{% static 'images/icon/map.png '%}" alt="">Seventh Avenue New York</li>
+							<li><img class="map" src="{% static 'images/icon/phone.png '%}" alt="">+123-456-7890</li>
+							<li><img class="map" src="{% static 'images/icon/gmail.png '%}" alt="">info@yourcompany.com</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- footer left -->
+
+			<div class="col-md-3 col-sm-6">
+				<div class="single-footer">
+					<div class="single-recent-post">
+						<div class="footer-title">
+							<h3>Recent News</h3>
+						</div>
+						<ul class="recent-post">
+							<li>
+								<a href="#">
+									<div class="post-thum">
+										<img src="{% static 'images/blog/f4.jpg '%}" alt="" class="img-rounded">
+									</div>
+									<div class="post-content">
+										<p>A Clean Website Gives More Experience To The Visitors.
+										</p>
+										<span>12 July, 2018</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="post-thum">
+										<img src="{% static 'images/blog/f5.jpg '%}" alt="" class="img-rounded">
+									</div>
+									<div class="post-content">
+										<p>A Clean Website Gives More Experience To The Visitors.
+										</p>
+										<span>12 July, 2018</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="post-thum">
+										<img src="{% static 'images/blog/f6.jpg '%}" alt="" class="img-rounded">
+									</div>
+									<div class="post-content">
+										<p>A Clean Website Gives More Experience To The Visitors.
+										</p>
+										<span>12 July, 2018</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>	<!-- footer latest news -->
+
+			<!-- footer destination -->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-footer">
+					<div class="footer-title">
+						<h3>Destination</h3>
+					</div>
+					<ul class="footer-gallery">
+						<li>
+							<a href="#">
+								<div class="image-overlay">
+									<img src="{% static 'images/destination/1.jpg '%}" alt="">
+									<div class="overly-city">
+										<span>Austrila</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="image-overlay">
+									<img src="{% static 'images/destination/2.jpg '%}" alt="">
+									<div class="overly-city">
+										<span>England</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="image-overlay">
+									<img src="{% static 'images/destination/3.jpg '%}" alt="">
+									<div class="overly-city">
+										<span>France</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="image-overlay">
+									<img src="{% static 'images/destination/4.jpg '%}" alt="">
+									<div class="overly-city">
+										<span>America</span>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>	<!-- footer destination -->
+
+			<!-- footer contact -->
+			<div class="col-md-3 col-sm-6 f-phone-responsive">
+				<div class="single-footer">
+					<div class="footer-title">
+						<h3>Quick Contact</h3>
+					</div>
+					<div class="footer-contact-form">
+						<form action="#">
+							<ul class="footer-form-element">
+								<li>
+									<input type="text" name="email" id="email" placeholder="" value="Email Address" onblur="if(this.value==''){this.value='Email Address'}" onfocus="if(this.value=='Email Address'){this.value=''}">
+								</li>
+								<li>
+									<textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+								</li>
+								<li>
+									<button>Send</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+					<div class="footer-social-media">
+						<div class="social-footer-title">
+							<h3>Follow Us</h3>
+						</div>
+						<ul class="footer-social-link">
+							<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+							<li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a>
+							</li>
+							<li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>	<!-- footer contact -->
+		</div>
+
+		<div class="row">
+			<div class="footer-bottom">
+				<div class="col-md-5">
+					<div class="copyright">
+						<p>Copyright &copy; 2018 Trabble By <a href="#"><span>SylTheme</span></a></p>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<ul class="payicon pull-right">
+						<li>We Accept</li>
+						<li><img src="{% static 'images/payicon01.png' %}" alt=""></li>
+						<li><img src="{% static 'images/payicon02.png' %}" alt=""></li>
+						<li><img src="{% static 'images/payicon03.png' %}" alt=""></li>
+						<li><img src="{% static 'images/payicon04.png' %}" alt=""></li>
+						<li><img src="{% static 'images/payicon05.png' %}" alt=""></li>
+						<li><img src="{% static 'images/payicon06.png' %}" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer> <!-- end footer -->
+
+<div class="to-top pos-rtive">
+	<a href="#"><i class = "fa fa-angle-up"></i></a>
+</div><!-- Scroll to top-->
+    
+    <!-- ============================
+    		JavaScript Files
+    ============================= -->
+    <!-- jquery -->
+    <script src="{% static 'js/vendor/jquery-3.2.0.min.js '%}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js '%}"></script>
+    <!-- owl.carousel js -->
+    <script src="{% static 'js/owl.carousel.min.js '%}"></script>
+    <!-- slick js -->
+    <script src="{% static 'js/slick.min.js '%}"></script>
+    <!-- meanmenu js -->
+    <script src="{% static 'js/jquery.meanmenu.min.js '%}"></script>
+    <!-- jquery-ui js -->
+    <script src="{% static 'js/jquery-ui.min.js '%}"></script>
+    <!-- wow js -->
+    <script src="{% static 'js/wow.min.js '%}"></script>
+    <!-- counter js -->
+    <script src="{% static 'js/jquery.counterup.min.js '%}"></script>
+    <!-- Countdown js -->
+    <script src="{% static 'js/jquery.countdown.min.js '%}"></script>
+    <!-- waypoints js -->
+    <script src="{% static 'js/jquery.waypoints.min.js '%}"></script>
+    <!-- Isotope js -->
+    <script src="{% static 'js/isotope.pkgd.min.js '%}"></script>
+    <!-- magnific js -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js '%}"></script>
+    <!-- Image loaded js -->
+    <script src="{% static 'js/imagesloaded.pkgd.min.js '%}"></script>
+    <!-- chossen js -->
+    <script src="{% static 'js/chosen.jquery.min.js '%}"></script>
+    <!-- Revolution JS -->
+    <script src="{% static 'js/assets/revolution/jquery.themepunch.revolution.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/jquery.themepunch.tools.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.actions.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.carousel.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.kenburn.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.layeranimation.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.migration.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.navigation.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.parallax.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.slideanims.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/extensions/revolution.extension.video.min.js '%}"></script>
+    <script src="{% static 'js/assets/revolution/revolution.js '%}"></script>
+    <!-- plugin js -->
+    <script src="{% static 'js/plugins.js '%}"></script>
+    <!-- select2 js -->
+    <script src="{% static 'js/select2.min.js '%}"></script>    
+    <script src="{% static 'js/colors.js"></script>
+    <!-- customSelect Js -->
+    <script src="{% static 'js/jquery-customselect.js '%}"></script>
+    <!-- custom js -->
+    <script src="{% static 'js/custom.js '%}"></script>
+</body>
+</html>

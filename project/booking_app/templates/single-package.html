@@ -1,0 +1,450 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="TRABBLE - Tour, Travel, Travel Agency Template">
+    <meta name="keywords" content="Tour, Travel, Travel Agency Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> B-Zone - Экскурсии в ОАЭ, Абу-Даби,большой выбор экскурсий!</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico ' %}">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Button Hover animate css -->
+    <link rel="stylesheet" href="{% static 'css/hover-min.css' %}">
+    <!-- jquery-ui.min css -->
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <!-- slick css -->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <!-- chosen.min-->
+    <link rel="stylesheet" href="{% static 'css/chosen.min.css' %}">
+    <!-- chosen.min-->
+    <link rel="stylesheet" href="{% static 'css/jquery-customselect.css' %}">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- magnific Css -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="{% static 'css/assets/revolution/layers.css' %}">
+    <link rel="stylesheet" href="{% static 'css/assets/revolution/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/assets/revolution/settings.css' %}">
+    <!-- custome css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- modernizr css -->
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+</head>
+<body> 
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>	
+<header>
+	<div class="header-top-area">
+		<div class="container">
+			<div class="row">
+				<div class="header-top-left">
+					<div class="col-md-9 col-sm-9 col-xs-12">
+						<ul class="header-top-contact">
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i>г. Бишкек, Ибраимова 181</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i>+(996)-550-753-159</li>
+							<li><i class="fa fa-envelope-o" aria-hidden="true"></i>info@b-zone.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- header top end -->
+
+	<div class="header-bottom-area" id="stick-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-12 tap-v-responsive">
+					<div class="logo-area">
+						<a href="http://127.0.0.1:8000"><img src="{% static 'images/logo.png' %}" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<nav>
+						<ul class="main-menu text-right">
+							<li class="active"><a href="http://127.0.0.1:8000">Главная</a></li>
+							<li><a href="{% url 'blog-version-one' %}">Блог</a></li>
+							<li><a href="contact.html">Контакты</a></li>
+						</ul>
+					</nav>
+				</div> <!-- main menu end here -->
+			</div>
+		</div>
+	</div> <!-- header-bottom area end here -->
+</header> <!-- header area end here -->
+
+<!-- blog breadcrumb version one strat here -->
+<section class="breadcrumb-blog-version-one">
+	<div class="single-bredcurms" style="background-image:url({{ MEDIA_URL }}{{tour.tour_main_image.url }});>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="bredcrums-content">
+						<h2>Подробно о туре</h2>
+						<ul>
+							<li><a href="index.html">Главная</a>
+							</li>
+							<li class="active"><a href="single-package.html">Детали тура</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!-- blog breadcrumb version one end here -->
+
+<section class="section-paddings single-package-area">
+	<div class="container">
+		<div class="row">
+			<!-- single package tab with details -->
+			<div class="col-md-8 col-sm-12">
+				<div class="single-package-details">
+					<div class="single-package-title">
+						<h2>{{tour.tour_name}}</h2>
+					</div>
+					<ul class="package-content">
+						<li>Длительность {{tour.tour_duration}} часов</li>
+						<li> от ${{tour.tour_price}}</li>
+					</ul>
+					<div class="package-features-image">
+						<img src="{{ MEDIA_URL }}{{tour.tour_second_image.url }}" alt="" class="img-responsove border-raduis-3">
+					</div>
+				</div><!-- tab menu strat -->
+
+				<div class="package-tab-menu">
+					<ul class="package-tab-menu" role="tablist" id="tab7">
+						<li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Описание</a>
+						</li>
+						<li role="presentation"><a href="#itinerary" aria-controls="itinerary" role="tab" data-toggle="tab">Маршрут</a>
+						</li>
+						<li role="presentation"><a href="#map" aria-controls="map" role="tab" data-toggle="tab">Карта тура</a>
+						</li>
+						<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Видео</a>
+						</li>
+						<li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Просмотры (3)</a>
+						</li>
+					</ul>
+				</div><!-- tab menu end -->
+
+				<!-- tab content start -->
+				<div class="row">
+					<!-- tabs content -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="description">
+							<div class="row">
+								<!-- left content -->
+								<div class="col-md-8 col-sm-8">
+									<div class="tour-description">
+										<h4>Описание тура</h4>
+										<p>{{tour.tour_description}}</p>
+									</div>
+									<div class="chosse-packge">
+										<h4>Почему стоит выбрать данный тур?</h4>
+										<div class="row">
+											<div class="col-md-6 col-sm-6">
+												<ul class="packaging-contents">
+													<li><i class="fa fa-angle-double-right"></i>Sed legere graecis ex.</li>
+													<li><i class="fa fa-angle-double-right"></i>Sed legere graecis ex.</li>
+													<li><i class="fa fa-angle-double-right"></i>Sed legere graecis ex.</li>
+												</ul>
+											</div>
+											<div class="col-md-6 col-sm-6">
+												<ul class="packaging-contents packaging-contents-right pull-right">
+													<li><i class="fa fa-angle-double-right"></i>Sed legere graecis ex.</li>
+													<li><i class="fa fa-angle-double-right"></i>Sed legere graecis ex.</li>
+													<li><i class="fa fa-angle-double-right"></i>Sed legere graecis ex.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div><!-- left-content -->
+							</div>
+						</div>
+
+						<div role="tabpanel" class="tab-pane fade" id="itinerary">
+							<div class="row">
+								<div class="col-md-12 col-sm-12">
+									<div class="tour-description">
+										<h4>Детальное описание</h4>
+										<div class="main-timeline">
+											<!-- single timeline -->
+											<div class="timeline">
+												<div class="timeline-content left">
+													<span class="timeline-icon">1</span>
+													<h4>Day 1: Meeting The All Members</h4>
+													<p>{{tour.day1_description}}</p>
+												</div>
+											</div><!-- single timeline -->
+
+											<!-- single timeline -->
+											<div class="timeline">
+												<div class="timeline-content left">
+													<span class="timeline-icon">2</span>
+													<h4>Day 2: Unforgettable Journey</h4>
+													<p>{{tour.day2_description}}</p>
+												</div>
+											</div><!-- single timeline -->
+
+											<!-- single timeline -->
+											<div class="timeline">
+												<div class="timeline-content left">
+													<span class="timeline-icon">3</span>
+													<h4>Day 3: Night Party</h4>
+													<p>{{tour.day3_description}}</p>
+												</div>
+											</div><!-- single timeline -->
+
+											<!-- single timeline -->
+											<div class="timeline">
+												<div class="timeline-content left">
+													<span class="timeline-icon">4</span>
+													<h4>Day 4: Time To Say Good Bay</h4>
+													<p>{{tour.day4_description}}</p>
+												</div>
+											</div><!-- single timeline -->
+											<!-- single timeline -->
+											<div class="timeline">
+												<div class="timeline-content left">
+													<span class="timeline-icon">5</span>
+													<h4>Day 5: Time To Say Good Bay</h4>
+													<p>{{tour.day5_description}}</p>
+												</div>
+											</div><!-- single timeline -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- video tab content start -->
+						<div role="tabpanel" class="tab-pane fade" id="video">
+							<div class="row">
+								<div class="col-md-12 col-sm-12">
+									<div class="tour-description">
+										<h4>Video</h4>
+										<!-- Video -->
+										<div class="tab-video-area video-bg">
+											<div class="video-play-btn">
+												<a href="https://www.youtube.com/watch?v=UQneDljrWm0" class="video_iframe"><span><i class="fa fa-play"></i></span></a>
+											</div>
+										</div><!-- Video -->
+									</div>
+								</div>
+							</div>
+						</div><!-- video tab content end -->
+
+						<!-- video tab content start -->
+						<div role="tabpanel" class="tab-pane fade" id="reviews">
+							<div class="row">
+								<div class="col-md-12 col-sm-12">
+									<div class="tour-description">
+										<h4>Reviews</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nulla, omnis impedit possimus, quos inventore quo. Rem asperiores culpa, accusantium, reiciendis sint nihil excepturi minima officiis voluptatum omnis qui. Quisquam blanditiis quaerat commodi autem, ducimus, perspiciatis unde est nisi dolore consequatur expedita sint placeat inventore, alias, perferendis nobis adipisci tempore excepturi cupiditate harum odit ipsa deserunt. Quaerat praesentium odio voluptatem commodi vitae dolore, a amet suscipit eligendi ut repellendus ducimus tempora, est, tempore dignissimos expedita cupiditate quisquam minima dolores possimus. In porro vitae provident esse voluptas cum inventore magnam praesentium quaerat veritatis, explicabo non doloremque rerum, nulla maxime architecto, libero.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nulla, omnis impedit possimus, quos inventore quo. Rem asperiores culpa, accusantium, reiciendis sint nihil excepturi minima officiis voluptatum omnis qui. Quisquam blanditiis quaerat commodi autem, ducimus, perspiciatis unde est nisi dolore consequatur expedita sint placeat inventore, alias, perferendis nobis adipisci tempore excepturi cupiditate harum odit ipsa deserunt. Quaerat praesentium odio voluptatem commodi vitae dolore, a amet suscipit eligendi ut repellendus ducimus tempora, est, tempore dignissimos expedita cupiditate quisquam minima dolores possimus. In porro vitae provident esse voluptas cum inventore magnam praesentium quaerat veritatis, explicabo non doloremque rerum, nulla maxime architecto, libero.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur totam accusamus, libero, eaque cupiditate veritatis placeat dignissimos voluptatum, alias similique ad laudantium perferendis dolore ipsa vero iure praesentium asperiores quia rem maxime rerum, labore sed. Dolorem, nisi, inventore! Explicabo vel cupiditate quidem at, deleniti nostrum. Possimus cumque, minima maxime at.</p>
+									</div>
+								</div>
+							</div>
+						</div><!-- video tab content end -->
+					</div><!-- tabs content-->
+				</div><!-- tab content end -->
+			</div><!-- single package tab with details -->
+
+			<!-- booking form start here -->
+			<div class="col-md-4 col-sm-12">
+				<aside>
+					<div class="booking-form">
+						<div class="booking-title">
+							<h2>Напишите нам</h2>
+						</div>
+						<form action="#" method="post">
+							{% csrf_token %}
+    						{{ form.as_p }}
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="confirm_email" placeholder="Ваш E-mail *">
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" id="number" placeholder="Номер телефона *">
+							</div>
+							<div class="form-group">
+								<textarea name="messgae" id="message" cols="30" rows="10" class="form-control" placeholder="Сообщение *"></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="booking-confirm hvr-shutter-out-horizontal">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</aside><!-- adverestment start here-->
+
+				<div class="adding-form">
+					<div class="addfor-bg">
+						<div class="add-content">
+							<h3>Остались вопросы?</h3>
+							<p>Свяжитесь с нами в любое время суток!</p>
+							<ul class="contact-for-add">
+								<li><img src="{% static 'images/icon/phone.png '%}" alt="">+(996)552-753-159</li>
+								<li><img src="{% static 'images/icon/gmail.png '%}" alt="">info@b-zone.ru</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- adverestment start here-->
+			</div><!-- booking form end here -->
+		</div>
+	</div>
+</section>
+<!-- footer area -->
+<footer class="footer-area">
+	<div class="container">
+		<div class="row">
+			<!-- footer left -->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-footer">
+					<div class="footer-title">
+						<a href="#"><img src="{% static 'images/logo.png '%}" alt="">
+						</a>
+					</div>
+					<div class="footer-left">
+						<div class="footer-logo">
+							<p>Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula vestibulum sodales.</p>
+						</div>
+						<ul class="footer-contact">
+							<li><img class="map" src="{% static 'images/icon/map.png '%}" alt="">Seventh Avenue New York</li>
+							<li><img class="map" src="{% static 'images/icon/phone.png '%}" alt="">+123-456-7890</li>
+							<li><img class="map" src="{% static 'images/icon/gmail.png '%}" alt="">info@yourcompany.com</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- footer left -->
+
+			<!-- footer contact -->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-footer">
+					<div class="footer-title">
+						<h3>Быстрая связь</h3>
+					</div>
+					<div class="footer-contact-form">
+						<form action="#" method="post">
+							<ul class="footer-form-element">
+								<li>
+									<input type="text" name="email" id="email" placeholder="" value="Email Address" onblur="if(this.value==''){this.value='Email Address'}" onfocus="if(this.value=='Email Address'){this.value=''}">
+								</li>
+								<li>
+									<textarea name="message" id="message1" cols="30" rows="10" placeholder="Message"></textarea>
+								</li>
+								<li>
+									<button>Send</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+					<div class="footer-social-media">
+						<div class="social-footer-title">
+							<h3>Подпишитесь</h3>
+						</div>
+						<ul class="footer-social-link">
+							<li><a href="#"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- footer contact -->
+
+		</div>
+		<div class="row">
+			<div class="footer-bottom">
+				<div class="col-md-5">
+					<div class="copyright">
+						<p>Copyright &copy; 2018 Trabble By <a href="#"><span>SylTheme</span></a></p>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<ul class="payicon pull-right">
+						<li>We Accept</li>
+						<li><img src="{% static 'images/payicon01.png '%}" alt=""></li>
+						<li><img src="{% static 'images/payicon02.png '%}" alt=""></li>
+						<li><img src="{% static 'images/payicon03.png '%}" alt=""></li>
+						<li><img src="{% static 'images/payicon04.png '%}" alt=""></li>
+						<li><img src="{% static 'images/payicon05.png '%}" alt=""></li>
+						<li><img src="{% static 'images/payicon06.png '%}" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="to-top pos-rtive">
+	<a href="#"><i class = "fa fa-angle-up"></i></a>
+</div> <!-- Scroll to top jump button end-->
+
+    <!-- ============================
+            JavaScript Files
+    ============================= -->
+    <!-- jquery latest version -->
+    <script src="{% static 'js/vendor/jquery-3.2.0.min.js '%}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js '%}"></script>
+    <!-- owl.carousel js -->
+    <script src="{% static 'js/owl.carousel.min.js '%}"></script>
+    <!-- slick js -->
+    <script src="{% static 'js/slick.min.js '%}"></script>
+    <!-- meanmenu js -->
+    <script src="{% static 'js/jquery.meanmenu.min.js '%}"></script>
+    <!-- jquery-ui js -->
+    <script src="{% static 'js/jquery-ui.min.js '%}"></script>
+    <!-- wow js -->
+    <script src="{% static 'js/wow.min.js '%}"></script>
+    <!-- counter js -->
+    <script src="{% static 'js/jquery.counterup.min.js '%}"></script>
+    <!-- Countdown js -->
+    <script src="{% static 'js/jquery.countdown.min.js '%}"></script>
+    <!-- waypoints js -->
+    <script src="{% static 'js/jquery.waypoints.min.js '%}"></script>
+    <!-- Isotope js -->
+    <script src="{% static 'js/isotope.pkgd.min.js '%}"></script>
+    <!-- magnific js -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js '%}"></script>
+    <!-- Image loaded js -->
+    <script src="{% static 'js/imagesloaded.pkgd.min.js '%}"></script>
+    <!-- chossen js -->
+    <script src="{% static 'js/chosen.jquery.min.js '%}"></script>  
+    <!-- Jquery plugin -->
+    <script src="{% static 'js/plugins.js '%}"></script>
+    <!-- select2 js plugin -->
+    <script src="{% static 'js/select2.min.js '%}"></script>    
+    <script src="{% static 'js/colors.js '%}"></script>
+    <!-- Jquery plugin -->
+    <script src="{% static 'js/jquery-customselect.js '%}"></script>
+    <!-- google map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIW0B_E3g-Yg533xy3yF0WHThi-mFvSNQ "></script>
+    <!-- map js -->
+    <script src="{% static 'js/google-map.js '%}"></script>
+    <!-- main js -->    
+    <script src="{% static 'js/custom.js '%}"></script>
+</body>
+</html>
