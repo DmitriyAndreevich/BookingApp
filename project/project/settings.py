@@ -121,10 +121,10 @@ USE_TZ = True
 
 
 _PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
-STATIC_ROOT = os.path.join(_PATH, 'booking_app', 'static')
+STATIC_ROOT = os.path.join(_PATH, 'static')
 
 MEDIA_URL = '/package_images/'
 STATIC_URL = '/STATIC_ROOT/'
-MEDIA_ROOT = os.path.join(_PATH, 'booking_app', 'images')
+MEDIA_ROOT = os.path.join(_PATH, 'images')
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
