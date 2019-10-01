@@ -25,7 +25,7 @@ SECRET_KEY = 'ten%*cqx+b6)a*uh-ormp*p&1vxs0@e9=9j*ul&j@=m6@jtj%w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dmitriy89andreevich.pythonanywhere.com']
 
 
 # Application definition
@@ -121,9 +121,10 @@ USE_TZ = True
 
 
 _PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+STATIC_ROOT = os.path.join(_PATH, 'booking_app', 'static')
 
 MEDIA_URL = '/package_images/'
 STATIC_URL = '/STATIC_ROOT/'
-MEDIA_ROOT = os.path.join(_PATH, 'booking_app', 'static')
+MEDIA_ROOT = os.path.join(_PATH, 'booking_app', 'images')
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
